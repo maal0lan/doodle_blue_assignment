@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Explora&family=Geist+Pixel&family=Jacquard+12&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            color: rgb(190, 190, 190);
+            background-color: black;
+            font-family: "Geist Pixel", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:"ELSH" 20.1;
+        }
+        
+       
+        
+        table {
+            border-spacing: 20px 10px;
+        }
+
+        
+        h1{
+            font-size: 40px;
+            text-align: right; 
+            color: yellow;
+
+        }
+        .heading,td{
+            font-size: 60px;
+            text-align: left; 
+            color: yellow;
+
+        }
+        .about_me{
+            margin: 0;
+            padding-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            color: yellow;
+            font-size: 58px;
+            line-height: 1.1;
+
+        }
+        .about_mee{
+           margin: 90px auto;
+            max-width: 1100px;
+            padding: 0 24px;
+            text-align: justify;
+
+        }
+        .about_me_info{
+            color: white;
+            font-size: 15px;
+            line-height: 1.8;
+            
+
+        }
+        .about_me_heading {
+            margin: 0;
+        }
+
+        .summa{
+            font-size: 15px;
+            color: white;
+            line-height: 29px;
+
+        }
+        .sub{
+            font-size: 40px;
+            color: yellow;
+            line-height: 27px;
+
+        }
+ 
+
+        .projects {
+            margin: 70px auto;
+            max-width: 1100px;
+            padding: 0 24px;
+        }
+
+        .projects h2 {
+            margin: 0 0 28px;
+            color: yellow;
+            font-size: 48px;
+            text-align: right;
+        }
+        
+
+        .project {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 32px;
+            align-items: center;
+            padding: 28px 0;
+            border-top: 1px solid #393939;
+        }
+
+         
+        .project-name {
+            margin: 0;
+            color: yellow;
+            font-size: 58px;
+            line-height: 1.1;
+        }
+
+        .project-info  {
+            
+            color: white;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .project-link {
+            
+            padding: 9px 13px;
+            border: 1px solid yellow;
+            color: yellow;
+            font-size: 13px;
+            text-decoration:none;
+            
+        }
+        .project-link:hover
+
+        {
+            background: yellow;
+            color: black;
+        }
+
+
+
+        .marquee_white{
+            color:white;
+        }
+        .marquee_yellow{
+            color: white;
+        }
+         
+
+        .contacts{
+            margin: 90px auto;
+            max-width: 1400px;
+            
+
+        }
+        .contacts h2{
+            text-align: right;
+            color: yellow;
+            font-size: 48px;
+            text-align: right;
+
+        }
+        .contact {
+           display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            align-items: center;
+            
+
+        }
+        .contact_type_left{
+            text-align: left;
+           color: yellow;
+            font-size: 120px;
+            align-items: center;
+            padding: 28px 0;
+            
+
+        }
+        .contact_type_right{
+            text-align: right;
+           color: yellow;
+            font-size: 120px;
+            align-items: center;
+            padding: 28px 0;
+        }
+        .contacts .contact_heading_dark,
+        .contacts .contact_heading_main_dark {
+            color: black;
+        }
+        .contact_info {
+            /* border: 1px solid yellow; */
+          color: white;
+            font-size: 25px;
+            align-items: center;
+            padding: 28px 0;
+            
+
+        }
+       .marquee_new {
+        color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+.marquee_new:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.change_theme_button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: "Geist Pixel", sans-serif;
+
+}
+.change_theme_button:hover{
+    color: yellow;
+    font-family: "Geist Pixel", sans-serif;
+}
+.marquee_theme_button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  
+    font-family: "Geist Pixel", sans-serif;
+
+}
+.marquee_theme_button:hover{
+    color: yellow;
+    font-family: "Geist Pixel", sans-serif;
+}
+.nav_bar{
+      position: fixed;
+      gap: 25px;
+}
+
+.endpoint{
+text-align: center;font-size: 120px;word-spacing: 10px; color:crimson;
+}
+
+
+
+
+
+
+
+/* LIGHT THEME CONTENTS */
+ .body_bright{
+            color: rgb(255, 37, 255);
+            background-color: rgb(255, 255, 255);
+            font-family: "Geist Pixel", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:"ELSH" 20.1;
+        }
+.h1_bright{
+            font-size: 40px;
+            text-align: right; 
+            color: black;
+
+        }
+    
+.marquee_off{
+    color: black;
+}
+.about_me_dark{
+           margin: 0;
+           padding-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            color: black;
+            font-size: 58px;
+            line-height: 1.1;
+
+        }
+        .project-name-dark {
+            margin: 0;
+            color: yellow;
+            font-size: 58px;
+            line-height: 1.1;
+        }
+        .about_me_info_dark{
+            color: rgb(255, 37, 255);
+            font-size: 15px;
+            line-height: 1.8;
+            
+
+        }
+        .project-name-dark {
+            margin: 0;
+            color: black;
+            font-size: 58px;
+            line-height: 1.1;
+        }
+        .project-info-dark {
+            
+            color:rgb(255, 37, 255);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+       
+         .project-link-dark{
+            
+            padding: 9px 13px;
+            border: 1px solid rgb(255, 37, 255);
+            color: rgb(255, 37, 255);
+            font-size: 13px;
+            text-decoration:none;
+            
+        }
+        .project-link-dark:hover
+
+        {
+            background:rgb(255, 37, 255);
+            color: black;
+        }
+        
+
+         .contact_info_dark {
+           color: rgb(255, 37, 255);
+             font-size: 25px;
+             align-items: center;
+             padding: 28px 0;
+         }
+         .contact_info_dark marquee,
+         .contact_info_dark .marquee_new {
+             color: rgb(255, 37, 255);
+         }
+        .endpoint_dark{
+            text-align: center;font-size: 120px;word-spacing: 10px; color:rgb(71, 255, 71);
+        }
+
+        .marquee_new_dark {
+        color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+ .marquee_new_dark:hover {
+        color: red;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+    </style>
+
+</head>
+
+<body id="body">
+    
+
+
+
+
+
+
+
+<div class="nav_bar">
+    <button class="change_theme_button" id ="change_theme">theme</button>
+    <button class="marquee_theme_button" id ="marqueee">animation</button>
+ </div>
+<div>
+    <!-- <p style="font-size: 20px; text-align: left  ;letter-spacing: 12px; ">PORTFOLIO</p> -->
+    <!-- <marquee behavior="scroll" direction="right" scrollamount="83" class="marquee_white">----PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="67"class="marquee_yellow">----------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="29"class="marquee_white">--PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="41"class="marquee_yellow">-------------------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="43"class="marquee_white">------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="76"class="marquee_yellow">----------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="46"class="marquee_white">---PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="59"class="marquee_yellow">-------PORTFOLIO</marquee> -->
+    <marquee behavior="scroll" direction="right" scrollamount="83" class="marquee_white" id="marquee_text">---- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="67"class="marquee_yellow"id="marquee_text">---------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="29"class="marquee_white"id="marquee_text">-- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="41"class="marquee_yellow"id="marquee_text">------------------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="43"class="marquee_white"id="marquee_text">------ </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="76"class="marquee_yellow"id="marquee_text">---------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="46"class="marquee_white"id="marquee_text">--- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="59"class="marquee_yellow"id="marquee_text">------- </marquee> 
+    <h1 id="h1" style="text-align: center;font-size: 40px;padding :60px;letter-spacing: 25px ">MAALOLAN</h1>
+     <marquee behavior="scroll" direction="right" scrollamount="71"class="marquee_yellow"id="marquee_text">------------------------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="93"class="marquee_white"id="marquee_text">-------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="57"class="marquee_yellow"id="marquee_text">----- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="39"class="marquee_white"id="marquee_text">--- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="55"class="marquee_yellow"id="marquee_text">------------ </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="28"class="marquee_white"id="marquee_text">---------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="83"class="marquee_yellow"id="marquee_text">------------------- </marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="25"class="marquee_white"id="marquee_text">---- </marquee>
+    <!-- <marquee behavior="scroll" direction="right" scrollamount="71"class="marquee_yellow">--------------------------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="93"class="marquee_white">--------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="57"class="marquee_yellow">-----PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="39"class="marquee_white">---PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="55"class="marquee_yellow">------------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="28"class="marquee_white">----------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="83"class="marquee_yellow">-------------------PORTFOLIO</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="25"class="marquee_white">----PORTFOLIO</marquee> -->
+    <!-- <p style="text-align: right; font-size: 20px; padding-top: 50px;letter-spacing: 12px">PORTFOLIO</p> -->
+    </div>
+    
+    <!-- <div class="heading">
+        <div style="padding-top:60px"></div>
+        <table >
+            <tr>
+                <th>
+                    <ul style="list-style-type: none;">
+                    <li>ABOUT</li>
+                    <li>ME</li>
+                    </ul>
+                </th>
+                <th class="summa">I am a passionate Computer Science student with a strong interest in full-stack development, artificial intelligence, machine learning, and cloud computing. I enjoy building practical, scalable solutions that combine modern web technologies with intelligent systems to solve real-world problems. My experience includes developing web applications using Next.js, TypeScript, PostgreSQL, and Supabase, along with exploring machine learning models, generative AI, and cloud infrastructure. I am also interested in research, problem-solving, and continuously learning new technologies. I strive to write clean, maintainable code, collaborate effectively with teams, and turn innovative ideas into impactful projects.</th>
+            </tr>
+        </table>
+    </div>   -->
+
+
+<div style="padding: 80px;"></div>
+
+    <section class="about_mee">
+        <article class="about_me" >
+            <h3 class="about_me_heading"id ="about_heading">ABOUT <br>ME</h3>
+            <div class="about_me_info"id="about_content">
+                <p>I am a passionate Computer Science student with a strong interest in full-stack development, artificial intelligence, machine learning, and cloud computing. I enjoy building practical, scalable solutions that combine modern web technologies with intelligent systems to solve real-world problems. My experience includes developing web applications using Next.js, TypeScript, PostgreSQL, and Supabase, along with exploring machine learning models, generative AI, and cloud infrastructure. I am also interested in research, problem-solving, and continuously learning new technologies. I strive to write clean, maintainable code, collaborate effectively with teams, and turn innovative ideas into impactful projects.</p>
+            </div>
+        </article>
+    </section>
+
+<div style="padding: 80px;"></div>
+
+    <section class="projects">
+        <h2>PROJECTS</h2>
+
+        <article class="project">
+            <h3 class="project-name">MOOD MEAL</h3>
+            <div class="project-info">
+                <p>A voice-first, hands-free AI cooking assistant that guides you through personalized recipes — powered by Mistral via Ollama, wrapped in a Tkinter GUI. Just speak. Cook.</p>
+                <a class="project-link" href="https://github.com/maal0lan/mood-meal-0.1.0" id="proj_link">VIEW REPO</a>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3 class="project-name">CYBERBULLY</h3>
+            <div class="project-info">
+                <p>Cyberbullying text detection using transformer neural networks and nuance-aware multi-task learning. Designed for social media, chat, and comment moderation.</p>
+                <a class="project-link" href="https://pypi.org/project/cyberbully/" id="proj_link">VIEW PYPI</a>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3 class="project-name">Md2HTML</h3>
+            <div class="project-info">
+                <p>A plugin for converting Markdown to html files for easy hosting with built in CSS </p>
+                <a class="project-link" href="https://community.obsidian.md/plugins/mdtohtml" id="proj_link">VIEW STORE</a>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3 class="project-name">CARTOLERIA</h3>
+            <div class="project-info">
+                <p>A pixelated themed stationary shop where you can also order Xerox </p>
+                <a class="project-link" href="https://cartoleria-k4a0jf3i8-gmmaalolan-4369s-projects.vercel.app/" id="proj_link">VIEW SITE</a>
+            </div>
+        </article>
+
+        <article class="project">
+            <h3 class="project-name">RIFF-GEN</h3>
+            <div class="project-info">
+                <p>A Neural Network capable of generating musical notes in MIDI format with starting chords trained on rock, classical, country, orchestra musics</p>
+                <a class="project-link" href="https://github.com/maal0lan/riffgen" id="proj_link">VIEW REPO</a>
+            </div>
+        </article>
+    </section>
+    
+    <div style="padding: 80px;"></div>
+
+    <section class="contacts">
+        <h2 class="contact_heading_main contact-heading-main">CONTACT</h2>
+
+        <article class="contact">
+            <div class="contact_info contact-content">
+                 <marquee behavior="scroll" direction="right" scrollamount="16">send mail</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="22">collabrate</marquee>
+                 <a href="mailto:maalolangm@gmail.com" class="marquee_new" id="iyoyo" style="text-align: center;">maalolangm@gmail.com</a>
+                 <marquee behavior="scroll" direction="right" scrollamount="11">communicate</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="25">invite</marquee>
+               
+            </div>
+            <h3 class="contact_type_right contact-heading">MAIL</h3>
+        </article>
+
+
+         <article class="contact">
+            <h3 class="contact_type_left contact-heading">GITHUB</h3>
+            <div class="contact_info contact-content">
+                 <marquee behavior="scroll" direction="right" scrollamount="16">view repo</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="22">star</marquee>
+                 <a href="https://github.com/maal0lan" class="marquee_new" id="iyoyo" style="text-align: center;">maal0lan</a>
+                 <marquee behavior="scroll" direction="right" scrollamount="11">collabrate</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="25">PRs</marquee>
+               
+            </div>
+        </article>
+
+        <article class="contact">
+            
+            <div class="contact_info contact-content">
+                 <marquee behavior="scroll" direction="right" scrollamount="16">subscribe</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="22">view content</marquee>
+                 <a href="https://www.youtube.com/@maalolangm" class="marquee_new"  id="iyoyo" style="text-align: center;">@maalolangm</a>
+                 <marquee behavior="scroll" direction="right" scrollamount="11">comment</marquee>
+                 <marquee behavior="scroll" direction="right" scrollamount="25">share</marquee>
+               
+            </div>
+            <h3 class="contact_type_right contact-heading" >YOUTUBE</h3>
+        </article>
+    </section>
+<div style="padding: 100px;"></div>
+    <div><p class="endpoint" id="end">BYE</p></div>
+<div style="padding: 80px;"></div>
+</div>
+
+
+
+<script>
+    let theme = false;
+    const theme_button = document.getElementById('change_theme');
+    const theme_body = document.getElementById('body');
+    const theme_h1 = document.getElementById('h1');
+    const theme_about_heading = document.getElementById('about_heading');
+    const theme_about_content = document.getElementById('about_content');
+    const theme_proj_headings = document.querySelectorAll('.project-name');
+    const theme_proj_content = document.querySelectorAll('.project-info');
+    const theme_proj_link = document.querySelectorAll('.project-link');
+    const theme_cont_content = document.querySelectorAll('.contact-content');
+    const theme_cont_headn = document.querySelectorAll('.contact-heading');
+    const theme_cont_headn_main = document.querySelectorAll('.contact-heading-main');
+     const theme_finally = document.querySelectorAll('.marquee_new');
+    const theme_end = document.getElementById('end');
+       
+
+    theme_button.addEventListener('click', function () {
+        theme = !theme;
+        theme_body.className = theme ? 'body_bright' : 'body';
+        theme_h1.className = theme ? 'h1_bright' : '';
+        theme_about_heading.className = theme ? 'about_me_dark' : 'about_me';
+        theme_about_content.className = theme ? 'about_me_info_dark' : 'about_me_info';
+        theme_end.classList.toggle('endpoint_dark', theme);
+       
+      
+      
+      
+        theme_proj_headings.forEach(function (heading) {
+            heading.classList.toggle('project-name-dark', theme);
+            heading.classList.toggle('project-name', !theme);
+        });
+
+        theme_proj_link.forEach(function (link) {
+            link.classList.toggle('project-link-dark', theme);
+            link.classList.toggle('project-link', !theme);
+        });
+
+        theme_proj_content.forEach(function (content) {
+            content.classList.toggle('project-info-dark', theme);
+            content.classList.toggle('project-info', !theme);
+        });
+
+
+
+
+        theme_cont_content.forEach(function (content) {
+            content.classList.toggle('contact_info_dark', theme);
+        });
+
+        theme_cont_headn.forEach(function (heading) {
+            heading.classList.toggle('contact_heading_dark', theme);
+        });
+
+        theme_cont_headn_main.forEach(function (heading) {
+            heading.classList.toggle('contact_heading_main_dark', theme);
+        });
+
+
+        theme_finally.forEach(function (summa) {
+            summa.classList.toggle('marquee_new_dark', theme);
+            summa.classList.toggle('marquee_new', !theme);
+        });
+    
+    
+    });
+
+    let marquee_var = false;
+    const animation_button = document.getElementById('marqueee');
+    const marquee_animations = document.querySelectorAll('marquee[id="marquee_text"]');
+
+    animation_button.addEventListener('click', function () {
+        marquee_var = !marquee_var;
+        marquee_animations.forEach(function (marquee) {
+            marquee.classList.toggle('marquee_off', marquee_var);
+        });
+    });
+</script>
+</body>
+</html>

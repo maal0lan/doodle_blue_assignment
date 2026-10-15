@@ -1,0 +1,64 @@
+body{
+    background-color:black;
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+
+}
+.list{
+    font-family: "Jacquard 12", system-ui;
+    font-size:25px;
+    color:yellow;
+    text-align:left;
+}
+.head-button{
+    background:none;
+    border:none;
+    font-family: "Jacquard 12", system-ui;
+    color:yellow;
+    font-size:40px;
+}
+.head-button:hover{
+    color:red;
+    
+    word-spacing:15px;
+}
+
+.image{
+    width:350px;
+    height:200px;
+}
+
+.card_users{
+    font-family:  "Geist Pixel", sans-serif;
+    font-weight: 400;
+    background-color:black;
+    /* border:1px solid white; */
+    /* border-radius: 10px; */
+    margin: 150px;
+    border: 1px solid yellow;
+    padding:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.user_details {
+    flex: 1;
+}
+
+.user_name {
+    flex: 0.7;
+    margin-top: 170px;
+    font-size: 60px;
+    text-align: right;
+}
+
+
+    .user_name {
+        text-align: left;
+    }
+}
